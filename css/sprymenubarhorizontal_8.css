@@ -1,0 +1,65 @@
+﻿@charset "UTF-8";
+
+ul.MenuBarHorizontal
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 100%;
+	cursor: default;
+	width: auto;
+	font:"宋体";
+	font-weight:bold;
+	font-size:14px;
+}
+ul.MenuBarHorizontal li
+{
+	background:url(../images/nav_bg_8.png);
+	margin-left:20px;
+	margin-top:9px;
+	height:32px;
+	list-style-type: none;
+	font-size: 100%;
+	position: relative;
+	text-align: center;
+	cursor: pointer;
+	width: 117px;
+	float: left;
+	color: #99C;
+}
+ul.MenuBarHorizontal a
+{
+	display: block;
+	cursor: pointer;
+	height:24px;
+	padding-top:8px;
+	color: #333;
+	text-align:center;
+	vertical-align:middle;
+	text-decoration: none;
+}
+ul.MenuBarHorizontal a:hover, ul.MenuBarHorizontal a:focus
+{
+	background:url(../images/nav_bg1_8.png);
+	color: #FFF;
+}
+ul.MenuBarHorizontal a.MenuBarItemHover, ul.MenuBarHorizontal a.MenuBarItemSubmenuHover, ul.MenuBarHorizontal a.MenuBarSubmenuVisible
+{
+	background-color: #33C;
+	color: #FFF;
+}
+ul.MenuBarHorizontal li.MenuBarItemSubmenu div a{
+	background:url(../images/nav_bg_8.png);
+	padding-left:24px;
+	text-align:left;
+}
+ul.MenuBarHorizontal li.MenuBarItemSubmenu div a:Hover{
+	background:url(../images/nav_bg1_8.png);
+}
+ul.MenuBarHorizontal li.MenuBarItemSubmenu div{
+	display:none;
+	z-index:999;
+}
+ul.MenuBarHorizontal li.MenuBarItemSubmenu:hover div{
+	display:block;
+}
